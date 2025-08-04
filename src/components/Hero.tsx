@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <img 
-              src="/lovable-uploads/ac588351-2dee-4466-8e34-dd0faa3aa1c2.png"
+              src="/lovable-uploads/e5808f4e-2da5-4ae6-b07c-1321e0561e51.png"
               alt="Spoorthi Koppula"
               className="w-56 h-56 rounded-full mx-auto object-cover object-[60%_25%] shadow-2xl ring-4 ring-white/50 transform scale-125"
             />
