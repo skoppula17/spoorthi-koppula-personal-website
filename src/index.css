@@ -2,41 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Apple-inspired design system with pastels */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 99%;
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 0 0% 9%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 0 0% 9%;
 
-    --radius: 0.5rem;
+    /* Pastel colors for sections */
+    --pastel-pink: 330 100% 95%;
+    --pastel-pink-hover: 330 100% 90%;
+    --pastel-purple: 270 100% 95%;
+    --pastel-purple-hover: 270 100% 90%;
+    --pastel-blue: 210 100% 95%;
+    --pastel-blue-hover: 210 100% 90%;
+    --pastel-green: 120 100% 95%;
+    --pastel-green-hover: 120 100% 90%;
+
+    /* Apple-like radius */
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +109,52 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .section-hover {
+    @apply transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg;
+  }
+
+  .pastel-pink {
+    background: hsl(var(--pastel-pink));
+  }
+
+  .pastel-pink-hover:hover {
+    background: hsl(var(--pastel-pink-hover));
+  }
+
+  .pastel-purple {
+    background: hsl(var(--pastel-purple));
+  }
+
+  .pastel-purple-hover:hover {
+    background: hsl(var(--pastel-purple-hover));
+  }
+
+  .pastel-blue {
+    background: hsl(var(--pastel-blue));
+  }
+
+  .pastel-blue-hover:hover {
+    background: hsl(var(--pastel-blue-hover));
+  }
+
+  .pastel-green {
+    background: hsl(var(--pastel-green));
+  }
+
+  .pastel-green-hover:hover {
+    background: hsl(var(--pastel-green-hover));
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-sm bg-white/80 border border-white/20;
   }
 }
