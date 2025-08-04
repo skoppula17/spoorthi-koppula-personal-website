@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Calendar } from 'lucide-react';
+import { Github, Calendar } from 'lucide-react';
 
 const projects = [
   {
@@ -12,8 +12,7 @@ const projects = [
       "Reduced false negatives by over 95%"
     ],
     technologies: ["Python", "Scikit-learn", "XGBoost", "LightGBM", "Pandas", "Matplotlib"],
-    githubUrl: "#", // User will provide
-    liveUrl: "#"
+    githubUrl: "#" // User will provide
   },
   {
     title: "Assignment Tracker",
@@ -27,8 +26,7 @@ const projects = [
       "Responsive UI with Tailwind CSS"
     ],
     technologies: ["React", "Next.js", "TypeScript", "FastAPI", "SQLAlchemy", "Docker", "Tailwind CSS"],
-    githubUrl: "#", // User will provide
-    liveUrl: "#"
+    githubUrl: "#" // User will provide
   },
   {
     title: "Smart RF Signal Classification",
@@ -41,9 +39,7 @@ const projects = [
       "Real-time signal analysis",
       "Interactive visualizations"
     ],
-    technologies: ["Python", "YOLOv5", "Flask", "React.js", "MongoDB", "PyTorch"],
-    githubUrl: "#", // User will provide
-    liveUrl: "#"
+    technologies: ["Python", "YOLOv5", "Flask", "React.js", "MongoDB", "PyTorch"]
   }
 ];
 
@@ -93,20 +89,15 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3 mt-auto">
-                  <a 
-                    href={project.githubUrl}
-                    className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all duration-300 hover:scale-105 text-sm"
-                  >
-                    <Github className="w-4 h-4" />
-                    GitHub
-                  </a>
-                  <a 
-                    href={project.liveUrl}
-                    className="flex items-center gap-2 px-4 py-2 bg-white/50 border border-white/20 rounded-xl hover:bg-white transition-all duration-300 hover:scale-105 text-sm"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
-                  </a>
+                  {project.githubUrl && (
+                    <a 
+                      href={project.githubUrl}
+                      className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all duration-300 hover:scale-105 text-sm"
+                    >
+                      <Github className="w-4 h-4" />
+                      GitHub
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

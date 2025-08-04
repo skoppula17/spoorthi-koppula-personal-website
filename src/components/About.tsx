@@ -16,22 +16,10 @@ const About = () => {
               My interests include Software Engineering, AI/ML, Cybersecurity, Data Science, and the business and management aspects of tech. I hope to work at the intersection of innovation and impact, contributing to meaningful, innovative solutions in the future.
             </p>
             
-            <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="text-center p-4 bg-white/50 rounded-2xl">
-                <div className="text-2xl font-bold text-primary">3.8+</div>
-                <div className="text-sm text-muted-foreground">GPA</div>
-              </div>
-              <div className="text-center p-4 bg-white/50 rounded-2xl">
-                <div className="text-2xl font-bold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">Projects</div>
-              </div>
-              <div className="text-center p-4 bg-white/50 rounded-2xl">
-                <div className="text-2xl font-bold text-primary">3+</div>
-                <div className="text-sm text-muted-foreground">Internships</div>
-              </div>
-              <div className="text-center p-4 bg-white/50 rounded-2xl">
-                <div className="text-2xl font-bold text-primary">Dec 2026</div>
-                <div className="text-sm text-muted-foreground">Graduation</div>
+            <div className="mt-8 flex justify-center">
+              <div className="text-center p-6 bg-white/50 rounded-2xl">
+                <div className="text-3xl font-bold text-primary">Dec 2026</div>
+                <div className="text-sm text-muted-foreground">Expected Graduation</div>
               </div>
             </div>
           </div>
