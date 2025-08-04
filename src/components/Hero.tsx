@@ -16,7 +16,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/e5808f4e-2da5-4ae6-b07c-1321e0561e51.png"
               alt="Spoorthi Koppula"
-              className="w-56 h-56 rounded-full mx-auto object-cover object-[60%_25%] shadow-2xl ring-4 ring-white/50 transform scale-125"
+              className="w-48 h-48 rounded-full mx-auto object-cover object-[60%_25%] shadow-2xl ring-4 ring-white/50 transform scale-125"
             />
           </div>
           
