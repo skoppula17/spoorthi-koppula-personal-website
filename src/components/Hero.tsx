@@ -12,11 +12,11 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-b from-background to-pastel-blue">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-8 flex justify-center md:justify-end md:pr-12">
+          <div className="mb-8">
             <img 
               src="/lovable-uploads/ac588351-2dee-4466-8e34-dd0faa3aa1c2.png"
               alt="Spoorthi Koppula"
-              className="w-56 h-56 rounded-full object-cover object-[center_20%] shadow-2xl ring-4 ring-white/50 transform scale-110"
+              className="w-56 h-56 rounded-full mx-auto object-cover object-[60%_25%] shadow-2xl ring-4 ring-white/50 transform scale-125"
             />
           </div>
           
